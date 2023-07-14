@@ -23,11 +23,8 @@ function add() {
             // create tag
             const card = document.createElement("div");
             weatherCity.appendChild(card);
-            if (icon === "https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/01n.svg") {
-                card.className = "card city1";
-            } else {
-                card.className = "card city2";
-            }
+
+            card.className = "card";
 
             const markup = `
             <h2 class= "center" data-name=${name},${sys.country}>
